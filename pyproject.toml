@@ -1,0 +1,25 @@
+[project]
+name = "bsp-drummap"
+version = "0.1.0"
+description = "Save and recall Arturia BeatStep Pro drum maps over USB SysEx."
+readme = "README.md"
+# Python 3.12 pinned: python-rtmidi 1.5.8 has no wheel beyond it (otherwise an MSVC build).
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "beatstep-pro-handler>=0.1.0",
+    "streamlit>=1.66",
+    "invoke>=2.2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bsp_drummap"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
