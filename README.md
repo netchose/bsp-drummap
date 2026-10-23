@@ -35,6 +35,10 @@ It has two pages:
 - **Editor**: create and edit presets in a grid laid out like the BSP
   (pad #1 bottom left, #9 right above it), automatic backups, pad identification.
 
+![Recall page: one button per preset, the last one sent is highlighted](docs/screenshots/recall.png)
+
+![Editor page: the 16 pads laid out like the BSP, with label, note and channel](docs/screenshots/editor.png)
+
 Every send first reads the BSP and keeps its state in `presets/_backups/` (last 10),
 then reads back the written parameters to check that they stuck.
 

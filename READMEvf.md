@@ -35,6 +35,10 @@ Elle a deux pages :
 - **Editor** : création et modification des presets dans une grille disposée comme la BSP
   (pad #1 en bas à gauche, #9 juste au-dessus), sauvegardes automatiques, identification des pads.
 
+![Page Recall : un bouton par preset, le dernier envoyé est mis en évidence](docs/screenshots/recall.png)
+
+![Page Editor : les 16 pads disposés comme sur la BSP, avec étiquette, note et canal](docs/screenshots/editor.png)
+
 Chaque envoi relit d'abord la BSP et garde son état dans `presets/_backups/` (10 dernières),
 puis relit les paramètres écrits pour vérifier qu'ils ont bien pris.
 
